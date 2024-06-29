@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:enviro.assessment.grad001.thamsanqandaba
+    driverClassName: org.h2.Driver
+    username: enviro
+    password: thamsanqa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
