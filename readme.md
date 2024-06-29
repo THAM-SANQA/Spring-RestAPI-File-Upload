@@ -11,6 +11,7 @@ This project provides an API for uploading and managing environmental data files
 - [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
+- [Author](#author)
 - [License](#license)
 
 ## Getting Started
