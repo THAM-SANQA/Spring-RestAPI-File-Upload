@@ -33,7 +33,7 @@ Follow these instructions to set up and run the project on your local machine.
    ```
 
 2. Configure the database connection in `src/main/resources/application.yml`:
-   ```properties
+   ```yaml
    spring:
     datasource:
         url: jdbc:postgresql://localhost:5432/your-database
