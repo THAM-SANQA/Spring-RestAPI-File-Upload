@@ -31,12 +31,24 @@ Follow these instructions to set up and run the project on your local machine.
    cd environmental-data-management
    ```
 
-2. Configure the database connection in `src/main/resources/application.properties`:
+2. Configure the database connection in `src/main/resources/application.yml`:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/your-database
-   spring.datasource.username=your-username
-   spring.datasource.password=your-password
-   spring.jpa.hibernate.ddl-auto=update
+   spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/your-database
+        driverClassName: org.h2.Driver
+        username: your-username
+        password: your-password
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    server:
+        port: 8080
+
    ```
 
 3. Build the project using Maven:
@@ -132,6 +144,12 @@ src
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
+## Author
+
+👤 **THAMSANQA NDABA**
+- GITHUB: [@THAM-SANQA](https://github.com/THAM-SANQA)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright © 2024 [THAMSANQA NDABA](https://github.com/THAM-SANQA).<br />
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
