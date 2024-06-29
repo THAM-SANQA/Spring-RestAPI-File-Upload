@@ -1,6 +1,3 @@
-Sure! Below is a sample `README.md` file for your project:
-
-```markdown
 # Environmental Data Management API
 
 This project provides an API for uploading and managing environmental data files in CSV and TXT formats. The API includes endpoints for file uploads and retrieving stored data.
@@ -85,7 +82,7 @@ The application will be accessible at `http://localhost:8080`.
       "id": 1,
       "dynamicDataJson": "{...}"
     },
-    ...
+    "..."
   ]
   ```
 
@@ -117,6 +114,9 @@ src
 │   │                       └── service
 │   │                           └── EnvironmentalDataService.java
 │   └── resources
+│       ├── data
+│       │   ├── data.txt
+│       │   └── environmental-protection-expenditure-account-2009-2022.csv   
 │       └── application.properties
 └── test
     └── java
@@ -125,7 +125,7 @@ src
                 └── assessment
                     └── grad001
                         └── thamsanqandaba
-                            └── FileControllerTest.java
+                            └── ThamsanqandabaApplicationTests.java
 ```
 
 ## Contributing
@@ -135,6 +135,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Feel free to customize this `README.md` to better suit your project's specifics and needs.
